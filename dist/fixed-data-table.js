@@ -3930,6 +3930,7 @@ var FixedDataTable = (0, _createReactClass2.default)({
     return delta < 0 && this.state.scrollY > 0 || delta >= 0 && this.state.scrollY < this.state.maxScrollY;
   },
   _onKeyDown: function _onKeyDown(event) {
+    console.log('keydown', event, this.props.keyboardPageEnabled);
     if (this.props.keyboardPageEnabled) {
       switch (event.key) {
         case 'PageDown':

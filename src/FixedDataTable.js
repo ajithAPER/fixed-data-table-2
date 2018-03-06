@@ -516,6 +516,7 @@ var FixedDataTable = createReactClass({
   },
 
   _onKeyDown(event) {
+    console.log('keydown', event, this.props.keyboardPageEnabled)
     if (this.props.keyboardPageEnabled) {
       switch (event.key) {
         case 'PageDown':
